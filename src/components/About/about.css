@@ -1,0 +1,105 @@
+:root {
+  --primarycolor: #00b894;
+  --hovercolor: hsl(197, 90%, 42%);
+  --whitecolor: hsl(0, 0%, 100%);
+  --blackcolor: hsl(0, 0%, 18%);
+  --textycolor: hsl(240, 1%, 48%);
+  --grayBg: hsl(0, 0%, 96%);
+  --graytext: rgb(190, 190, 190);
+  --whitecolorDream: hsl(330, 12%, 97%);
+  --inputColor: hsl(330, 12%, 97%);
+  /* --box-shadow: 2px 8px 2px rgba(178, 178, 178, 0.334); */
+}
+
+.about .secContainer .title {
+  color: var(--blackcolor);
+  line-height: 1.5rem;
+  border-bottom: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px 0;
+}
+.about .secContainer .mainContent {
+  gap: 1rem;
+}
+.about .secContainer .mainContent .singleItem {
+  text-align: center;
+}
+.about .secContainer .mainContent .singleItem img {
+  background: rgba(174, 171, 167, 0.265);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.about .secContainer .mainContent .singleItem h3 {
+  font-weight: 700;
+  color: var(--blackcolor);
+  padding: 0.5rem;
+}
+.about .secContainer .mainContent .singleItem p {
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 0.5rem;
+  color: var(--textycolor);
+}
+.about .secContainer .videoCard {
+  margin-top: 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.609)), url(../../Assets/28.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .secContainer .videoCard .cardvideo {
+  width: 100%;
+  height: 200px;
+  border: 1px solid var(--whitecolor);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.about .secContainer .videoCard .cardvideo video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .secContainer .videoCard .cardCounten {
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.about .secContainer .videoCard .cardCounten .cardText h2 {
+  color: var(--whitecolor);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.about .secContainer .videoCard .cardCounten .cardText p {
+  color: var(--whitecolor);
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-Width: 720px) {
+  .about .secContainer .videoCard .cardCounten {
+    gap: 4rem;
+    padding: 20px 15px;
+  }
+  .about .secContainer .videoCard .cardCounten .cardText h2 {
+    font-size: 2rem;
+  }
+  .about .secContainer .videoCard .cardCounten .cardText p {
+    opacity: 0.7;
+    font-size: 15px;
+  }
+  .about .secContainer .videoCard .cardCounten {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .secContainer .mainContent {
+    padding: 2.5rem 0;
+  }
+}/*# sourceMappingURL=about.css.map */

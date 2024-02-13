@@ -1,0 +1,104 @@
+:root {
+  --primarycolor: #00b894;
+  --hovercolor: hsl(197, 90%, 42%);
+  --whitecolor: hsl(0, 0%, 100%);
+  --blackcolor: hsl(0, 0%, 18%);
+  --textycolor: hsl(240, 1%, 48%);
+  --grayBg: hsl(0, 0%, 96%);
+  --graytext: rgb(190, 190, 190);
+  --whitecolorDream: hsl(330, 12%, 97%);
+  --inputColor: hsl(330, 12%, 97%);
+  /* --box-shadow: rgba(2px 8px 2px rgba(178, 178, 178, 0.334)); */
+}
+
+.footer {
+  background: var(--grayBg);
+  padding: 2rem 0;
+}
+.footer .secContainer {
+  gap: 1.5rem;
+  text-align: center;
+}
+.footer .secContainer .footerLogo {
+  padding-bottom: 0.5rem;
+}
+.footer .secContainer .footerLogo .logo {
+  color: var(--blackcolor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+.footer .secContainer .footerLogo .logo .icon {
+  font-size: 25px;
+  color: var(--primarycolor);
+  margin-left: 0.5rem;
+}
+.footer .secContainer .socials {
+  gap: 0.5rem;
+  margin: auto;
+  justify-content: center;
+}
+.footer .secContainer .socials .icon {
+  font-size: 30px;
+  background-color: var(--primarycolor);
+  border-radius: 50%;
+  padding: 8px;
+  color: var(--whitecolor);
+}
+.footer .secContainer .socials .icon:hover {
+  background: var(--blackcolor);
+}
+.footer .secContainer .footerlinks {
+  display: grid;
+  row-gap: 0.2rem;
+}
+.footer .secContainer .footerlinks .linkTitle {
+  padding-bottom: 0.5rem;
+  color: var(--blackcolor);
+  font-weight: 700;
+}
+.footer .secContainer .footerlinks li:hover {
+  transform: translateX(10px);
+}
+.footer .secContainer .footerlinks li:hover a {
+  color: var(--primarycolor);
+}
+.footer .secContainer .footerlinks a,
+.footer .secContainer .footerlinks .phone,
+.footer .secContainer .footerlinks .email {
+  color: var(--textycolor);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 448px) {
+  .secContainer {
+    grid-template-columns: repeat(2, 1fr) !important;
+    text-align: center;
+    align-items: flex-start;
+  }
+  .secContainer .footerlinks {
+    justify-content: center;
+  }
+  .secContainer .footerlinks .linkTitle {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .secContainer {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  .secContainer {
+    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer .secContainer .footerlinks li a {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=footer.css.map */

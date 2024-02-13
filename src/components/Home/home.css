@@ -1,0 +1,225 @@
+:root {
+  --primarycolor: hsl(218, 76%, 50%);
+  --hovercolor: hsl(197, 90%, 42%);
+  --whitecolor: hsl(0, 0%, 100%);
+  --blackcolor: hsl(0, 0%, 18%);
+  --textycolor: hsl(240, 1%, 48%);
+  --grayBg: hsl(0, 0%, 96%);
+  --graytext: rgb(190, 190, 190);
+  --whitecolorDream: hsl(330, 12%, 97%);
+}
+
+.home {
+  height: 80vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.home .secContainer .homeText {
+  text-align: center;
+}
+.home .secContainer .homeText .title {
+  color: var(--whitecolor);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.home .secContainer .homeText .subTitle {
+  color: var(--whitecolor);
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 1rem 0;
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.home .secContainer .homeText .btn {
+  padding: 0.6rem 1.5rem;
+}
+.home .secContainer .ani h3 {
+  color: var(--whitecolor);
+  font-size: 20px;
+}
+.home .secContainer .ani .animation {
+  font-size: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  color: var(--whitecolor);
+  text-shadow: 2px 1px 5px var(--blackcolor);
+  text-transform: uppercase;
+}
+.home .secContainer .homeCard {
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: var(--whitecolor);
+  position: absolute;
+  gap: 1rem;
+  justify-content: center;
+  transform: translate(-50%);
+  left: 50%;
+  margin-top: 5px;
+  box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.45);
+}
+.home .secContainer .homeCard .locationDiv,
+.home .secContainer .homeCard .disDiv,
+.home .secContainer .homeCard .priceDiv {
+  width: 100%;
+}
+.home .secContainer .homeCard .locationDiv label,
+.home .secContainer .homeCard .disDiv label,
+.home .secContainer .homeCard .priceDiv label {
+  display: block;
+  color: var(--textycolor);
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: 0.4rem;
+}
+.home .secContainer .homeCard .locationDiv input,
+.home .secContainer .homeCard .disDiv input,
+.home .secContainer .homeCard .priceDiv input {
+  width: 100%;
+  background: var(--graytext);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.home .secContainer .homeCard .locationDiv input::-moz-placeholder, .home .secContainer .homeCard .disDiv input::-moz-placeholder, .home .secContainer .homeCard .priceDiv input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.home .secContainer .homeCard .locationDiv input::placeholder,
+.home .secContainer .homeCard .disDiv input::placeholder,
+.home .secContainer .homeCard .priceDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.home .secContainer .homeCard .locationDiv input:focus,
+.home .secContainer .homeCard .disDiv input:focus,
+.home .secContainer .homeCard .priceDiv input:focus {
+  outline: none;
+}
+.home .secContainer .homeCard .btn {
+  width: 100%;
+  padding: 0.6rem 1.5rem;
+  color: var(--whitecolor);
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.changr_contant:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@media screen and (min-width: 480px) {
+  .home .secContainer .ani .animation {
+    width: 100%;
+    font-size: 20px;
+  }
+  .home .secContainer .homeCard {
+    display: grid;
+    bottom: -100px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .secContainer .homeCard .btn {
+    transform: translateY(-8px);
+  }
+}
+@media screen and (min-width: 375px) {
+  .home .secContainer .ani h3 {
+    text-align: center;
+  }
+  .home .secContainer .ani .animation {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 556px) {
+  .home .secContainer .ani .animation {
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .home .secContainer .homeText .title {
+    font-size: 2.5rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .ani .animation {
+    width: 100%;
+    font-size: 30px;
+  }
+  .home .secContainer .homeCard {
+    bottom: -10%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .homeText {
+    padding: 10px 25px;
+  }
+  .home .secContainer .homeText .title {
+    font-size: 2.5rem;
+    margin: auto;
+    line-height: 4rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .secContainer .homeText .subTitle {
+    font-size: 20px;
+  }
+  .home .secContainer .homeCard {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 360px) {
+  .home .secContainer .ani {
+    text-align: center;
+  }
+  .home .secContainer .ani .animation {
+    width: 100%;
+    font-size: 30px;
+  }
+}
+@keyframes changetext {
+  0% {
+    content: "Kathmandu";
+  }
+  20% {
+    content: "Lalitpur";
+  }
+  35% {
+    content: "Bhaktpur";
+  }
+  60% {
+    content: "Pokhara";
+  }
+  80% {
+    content: "Mustang";
+  }
+  100% {
+    content: "Lumbini";
+  }
+}/*# sourceMappingURL=home.css.map */
